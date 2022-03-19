@@ -18,21 +18,6 @@ app.get('/registro', function(req, res) {
     res.render('registro');
 });
 
-app.post('/registroUser', function(req, res) {
-    if(req.body.registro == ""){
-        let pass  = md5(req.body.pass) //Ciframos la contraseña.
-        //Realizamos la query del insert de los datos enviados.
-        connection.query('INSERT INTO users (username, email, pass) VALUES (?, ?, ?)',[req.body.username, req.body.email, pass], function(err, result, fields){
-            
-            if (err) throw err; //Si hay un error, lo muestra
-            res.redirect('/')
-            
-        })
-       }else{
-        res.redirect('/')
-       }
-});
-
 app.post('/auth', function(req, res) {
 
     if(req.body.sesion == ""){
