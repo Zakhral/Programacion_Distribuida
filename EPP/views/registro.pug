@@ -1,0 +1,66 @@
+html
+    head
+        title REGISTRO DE USUARIOS
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css")
+        style.
+            body
+                {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:20px;
+                background-size: 1500px 700px;
+                background-image:url("https://static.vecteezy.com/system/resources/previews/002/864/784/non_2x/glowing-hud-circle-abstract-hi-tech-background-futuristic-interface-virtual-reality-technology-screen-vector.jpg");
+                }
+    body(class="text-center" anx="4C")
+    main(class="form-signin")
+        form(action="/registroUser" method="post")
+            img(
+                width="172"
+                height="157"
+                class="mb-4"
+                /*style:"border: 5px solid; Color:white; padding:10px; border-radius:15px 15px 15px 15px;"*/
+                src="https://www3.gobiernodecanarias.org/medusa/edublog/cprofesgrancanariasur/wp-content/uploads/sites/240/2020/09/equipo-4.png")
+            h1(class="h3 mb-3 fw-normal" style="color:white") Registro de usuario
+            div
+                label(style="color:white") Username
+            div(class="input-group mb-3")
+                span(
+                    style="background-color:navy;color:white;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    class="input-group-text"
+                    id="inputGroup-sizing-default") nickname
+                input(
+                    style="background-color:white;color:navy;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="text"
+                    name="username")
+            div
+                label(style="color:white") Correo Electronico
+            div(class="input-group mb-3")
+                input(
+                    style="background-color:white;color:navy;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="email")
+                span(
+                    style="background-color:navy;color:white;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    class="input-group-text"
+                    id="inputGroup-sizing-default") E-mail
+            div
+                label(style="color:white") Contraseña        
+            div(class="input-group mb-3")
+                input(
+                    style="background-color:white;color:navy;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    name="pass")
+            button(class="w-100 btn btn-outline-info" type="submit" name="registro") Registrarme
+            P
+            button(class="w-100 btn btn-outline-warning" type="submit" name="back") Regresar
+            P
+            p(style="color:white") © 2022

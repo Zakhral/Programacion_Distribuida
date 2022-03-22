@@ -1,0 +1,48 @@
+html
+    head
+        title INICIO DE SESIÓN
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css")
+        style.
+            body
+                {
+                background-size: 1540px 700px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:20px;
+                background-image:url("https://msinet.com.ar/noticias/wp-content/uploads/2020/08/490_ciberatack.jpg");
+                }
+    body(class="text-center" anx="4C")           
+    main(class="form-signin")
+        img(
+            width="200"
+            height="180"
+            class="mb-4"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e33e8db0-1f6f-4209-bd7b-ebf8f4c6136b/deshb5p-f2f662ad-3def-4313-93ee-a4c37debd4d9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UzM2U4ZGIwLTFmNmYtNDIwOS1iZDdiLWViZjhmNGM2MTM2YlwvZGVzaGI1cC1mMmY2NjJhZC0zZGVmLTQzMTMtOTNlZS1hNGMzN2RlYmQ0ZDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZD3gtq4oo03m5BbVRQsHZgt8W14aXFy0dRaODAZoIvc") 
+        form(action="/auth" method="post" style="border: 5px solid; Color:white; padding:20px; border-radius:15px 15px 15px 15px;")
+            div
+                input(
+                    style="background-color:white;color:navy;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="email")
+                label(style="color:white;font-weight:bold") Correo Electrónico
+            br
+            div
+                input(
+                    style="background-color:white;color:navy;text-align:center;font-weight:bold;border-color:navy;border-width:medium;"
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    name="pass")
+                label(style="color:white;font-weight:bold") Contraseña
+            br
+            button(class="w-100 btn btn-outline-info" type="submit" name="sesion") Inicia Sesión
+            br
+            br
+            button(class="w-100 btn btn-outline-warning" type="submit" name="registro") Registrate
+            br
+            br
+            p(style="color:white") © 2022
