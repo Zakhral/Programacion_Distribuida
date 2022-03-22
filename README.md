@@ -1,4 +1,4 @@
-img(https://telematicanet.ucol.mx/blog/wp-content/uploads/2019/02/03-UdeC-publicitario-FT-Negro236x100.png)
+![udc](udc.png)
 
 Christian German Villalobos Martinez
 
